@@ -29,9 +29,19 @@ elif seed > 200 and seed < 1000:
 else: terrainSeed = print("daha kucuk bir sayi giriniz")
 
 terrainSeed = int(terrainSeed)
-    #genislik#
-for i in range(uzunluk):
-    for i in range(genislik):
-        print(f"[{terrainSeed + np.random.randint(20)}]", end='')
-    print("")
+    #generation variables
+y = 0
+x = 0 # kordinat sistemi
 
+    #generation
+for y in range(uzunluk): # uzunluk iterator
+    for x in range(genislik): # genislik iterator
+        if uzunluk <= 9 and genislik <= 9:
+            print(f"[{x+1},{y+1}]", end="")
+        elif uzunluk >= 10 and genislik >= 10:
+            if x <= 9 and y <= 9:
+                print(f" [ {x+1},{y+1} ]", end="")
+            if x >= 10 and y >= 10:
+                print(f"[{x+1},{y+1}]", end="")
+
+    print("")# line breaker
