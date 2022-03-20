@@ -1,8 +1,0 @@
-import math as m
-from main import uzunluk
-
-print(uzunluk)
-
-#with open('test.txt', 'r+') as file:
-#    f = file.readlines()
-#    print()
